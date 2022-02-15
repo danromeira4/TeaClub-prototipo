@@ -1,0 +1,96 @@
+.inscricao {
+  color: var(--verde5);
+  background-color: #fff;
+  min-height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 20px;
+}
+
+.inscricao-titulo {
+  font-weight: normal;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 10px 40px;
+  position: relative;
+}
+
+.inscricao-titulo::before {
+  content: "";
+  height: 78px;
+  width: 10px;
+  background: var(--verde3);
+  position: absolute;
+  left: 10px;
+}
+
+.inscricao-registro {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.inscricao-registro input {
+  background-color: var(--cinza2);
+  height: 30px;
+  width: 240px;
+  border-radius: 3px;
+  border: none;
+}
+
+.inscricao-registro-input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.inscricao-registro-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inscricao button {
+  border: none;
+  cursor: pointer;
+}
+
+/* ======================================= Responsivo ======================================= */
+
+@media (max-width: 800px) {
+  .inscricao-titulo {
+    font-size: 1.75rem;
+  }
+
+  .inscricao-titulo::before {
+    height: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .inscricao-titulo {
+    font-size: 1.5rem;
+  }
+
+  .inscricao-registro {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-left: 40px;
+  }
+
+  .inscricao {
+    justify-content: start;
+    padding-left: 60px;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .inscricao {
+    padding-left: 20px;
+  }
+}

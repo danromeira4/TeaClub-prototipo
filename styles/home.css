@@ -1,0 +1,76 @@
+.home {
+  background: url(../img/Home\ Image.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 600px;
+  /* p usar 100% sem criar um scroll*/
+  width: 100vw;
+  max-width: 100%;
+}
+
+.home-container {
+  display: flex;
+}
+
+.home-introducao {
+  font-family: Lora, Open Sans, sans-serif;
+  width: 25vw;
+  height: 600px;
+  background: var(--verde4);
+  margin-left: 5vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.home-introducao h1 {
+  color: var(--branco);
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.home-introducao h2 {
+  text-align: center;
+  color: var(--cinza2);
+  font-weight: normal;
+  padding: 0 10px;
+}
+
+/* =============================== Responsivo =========================================== */
+
+@media (max-width: 1000px) {
+  .home-introducao {
+    width: 35vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .home-introducao h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-introducao h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-introducao {
+    margin-left: 5vw;
+    width: 45vw;
+  }
+}
+
+@media (max-width: 460px) {
+  .home-introducao {
+    width: 50vw;
+    background: var(--verde5);
+  }
+}

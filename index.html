@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Lora:wght@400;500;700&family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tea Club</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav-superior">
+        <img class="logo" src="./img/Logo TeaClub.svg" alt="logo">
+        <form action="/" method="get">
+          <div>
+            <label for="busca">Buscar</label>
+            <input type="text" id="busca" name="busca" placeholder="  Buscar" />
+            <button type="submit" class="search-button"><img src="./img/search.svg" alt=""></button>
+          </div>
+        </form>
+        <div class="nav-superior-links">
+          <div class="minha-conta">
+            <a href="/"><img src="./img/account.svg">Minha Conta</a>
+          </div>
+          <div class="carrinho">
+            <a href="/"><img src="./img/cart.svg">Carrinho</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="nav-inferior">
+        <ul class="nav-inferior-lista">
+          <li class="link-1"><a href="#sobre">Sobre nós</a></li>
+          <li class="link-2"><a href="#chas">Chás de Ervas</a></li>
+          <li class="link-3"><a href="#outros">Outros Produtos</a></li>
+          <li class="link-4"><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="home">
+    <div class="home-container">
+      <div class="home-introducao">
+        <h1>Clube do Chá</h1>
+        <h2>A melhor loja de chás naturais do Brasil</h2>
+        <a href="/" class="botao-verde">Experimente já</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="sobre" id="sobre">
+    <div class="sobre-descricao">
+      <h3 class="sobre-titulo">Sobre Nós</h3>
+      <p>Nossa organização se dedica a venda de pacotes de <strong class="strong-verde">chás 100% naturais</strong> e outros produtos relacionados.
+        Nossas ervas e plantas são todas produzidas em nossas estufas, onde são plantadas e colhidas com toda dedicação e carinho que nossos clientes merecem.
+      </p>
+    </div>
+    <div class="sobre-cover">
+      <img src="./img/tea 1.jpg" alt="">
+    </div>
+    <div class="sobre-cover">
+      <img src="./img/tea 2.jpg" alt="">
+    </div>
+    <div class="sobre-beneficios">
+      <h3 class="sobre-titulo">Benefícios do nosso Chá</h3>
+      <ul class="sobre-lista">
+        <li class="sobre-lista-1">Possui efeitos medicinais</li>
+        <li class="sobre-lista-2">Proporciona um sono melhor</li>
+        <li class="sobre-lista-3">O preço cabe no seu bolso</li>
+        <li class="sobre-lista-4">E claro, é super delicioso!</li>
+      </ul>
+
+    </div>
+
+  </section>
+
+  <section class="produtos">
+    <div class="produtos-grupo" id="chas">
+      <h2>Chás de Ervas</h2>
+      <div class="produtos-container">
+        <div class="produto">
+          <img src="./img/camomila.jpg" alt="">
+
+          <h3>Camomila 100g</h3>
+          <div class="produto-desc">
+            <p>R$ 21,90</p>
+            <input type="number" id="quantidade" name="quantidade" min="1" max="100" placeholder="1">
+            <button class="botao-comprar">Comprar</button>
+          </div>
+        </div>
+
+        <div class="produto">
+          <img src="./img/erva doce.jpg" alt="">
+
+          <h3>Erva Doce 100g</h3>
+          <div class="produto-desc">
+            <p>R$ 25,90</p>
+            <input type="number" id="quantidade" name="quantidade" min="1" max="100" placeholder="1">
+            <button class="botao-comprar">Comprar</button>
+          </div>
+        </div>
+
+        <div class="produto">
+          <img src="./img/erva hibisco.jpg" alt="">
+
+          <h3>Hibisco 100g</h3>
+          <div class="produto-desc">
+            <p>R$ 29,99</p>
+            <input type="number" id="quantidade" name="quantidade" min="1" max="100" placeholder="1">
+            <button class="botao-comprar">Comprar</button>
+          </div>
+        </div>
+
+        <div class="produto">
+          <img src="./img/erva hortelã.jpg" alt="">
+
+          <h3>Hortelã 100g</h3>
+          <div class="produto-desc">
+            <p>R$ 23,90</p>
+            <input type="number" id="quantidade" name="quantidade" min="1" max="100" placeholder="1">
+            <button class="botao-comprar">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="produtos-grupo" id="outros">
+      <h2>Outros Produtos</h2>
+      <div class="produtos-container">
+        <div class="produto">
+          <img src="./img/caneca de chá.jpg" alt="">
+
+          <h3>Caneca de Chá</h3>
+          <div class="produto-desc">
+            <p>R$ 79,90</p>
+            <input type="number" id="quantidade" name="quantidade" min="1" max="100" placeholder="1">
+            <button class="botao-comprar">Comprar</button>
+          </div>
+        </div>
+
+        <div class="produto">
+          <img src="./img/bule de chá.jpg" alt="">
+
+          <h3>Bule de Chá</h3>
+          <div class="produto-desc">
+            <p>R$ 89,90</p>
+            <input type="number" id="quantidade" name="quantidade" min="1" max="100" placeholder="1">
+            <button class="botao-comprar">Comprar</button>
+          </div>
+        </div>
+
+        <div class="produto">
+          <img src="./img/xicara de chá.jpg" alt="">
+
+          <h3>Xícara de Chá</h3>
+          <div class="produto-desc">
+            <p>R$ 59,90</p>
+            <input type="number" id="quantidade" name="quantidade" min="1" max="100" placeholder="1">
+            <button class="botao-comprar">Comprar</button>
+          </div>
+        </div>
+
+        <div class="produto">
+          <img src="./img/colher medidora de chá.jpg" alt="">
+
+          <h3>Kit Colher Medidora</h3>
+          <div class="produto-desc">
+            <p>R$ 69,90</p>
+            <input type="number" id="quantidade" name="quantidade" min="1" max="100" placeholder="1">
+            <button class="botao-comprar">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="/" class="botao-verde">Ver Mais</a>
+
+  </section>
+
+  <section class="inscricao" id="inscricao">
+    <h2 class="inscricao-titulo">Cadastre-se e receba
+      <br>
+      <strong>novidades e promoções</strong>
+    </h2>
+
+    <div class="inscricao-registro">
+      <div class="inscricao-registro-container">
+        <div class="inscricao-registro-input">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome">
+        </div>
+
+        <div class="inscricao-registro-input">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+        </div>
+      </div>
+
+
+      <button class="botao-verde">Cadastrar</button>
+    </div>
+
+
+  </section>
+
+  <section class="footer" id="contato">
+    <div class="contato">
+      <h3>Contato</h3>
+      <ul class="contato-lista">
+        <li>+55 11 98765-4321</li>
+        <li>teaclub@email.com</li>
+      </ul>
+      <ul class="contato-lista">
+        <li>Rua Fícticia, 460 - Matrix</li>
+        <li>São Paulo - SP</li>
+      </ul>
+
+      <div class="contato-icones">
+        <a href="/"><img src="./img/icons8-facebook-novo.svg" alt=""></a>
+        <a href="/"><img src="./img/icons8-instagram.svg" alt=""></a>
+        <a href="/"><img src="./img/icons8-whatsapp.svg" alt=""></a>
+      </div>
+
+
+    </div>
+
+    <div class="info">
+      <h3>Informações</h3>
+      <ul class="info-lista">
+        <li><a href="/">Dúvidas Frequentes</a></li>
+        <li><a href="/">Formas de Pagamento</a></li>
+        <li><a href="/">Termos e condições</a></li>
+        <li><a href="/">Política de Segurança e Privacidade</a></li>
+        <li><a href="/">Trocas e Devoluções</a></li>
+      </ul>
+    </div>
+
+    <p class="copy">TeaClub © Alguns direitos reservados.</p>
+
+  </section>
+</body>
+
+</html>

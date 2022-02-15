@@ -1,0 +1,77 @@
+:root {
+  --verde1: #e8ffac;
+  --verde2: #d5ff67;
+  --verde3: #95c221;
+  --verde4: #577800;
+  --verde5: #121800;
+
+  --branco: #fff;
+  --preto: #000;
+
+  --cinza1: #f5f5f5;
+  --cinza2: #e0e0e0;
+  --cinza3: #a3a3a3;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: Open Sans, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+p,
+img,
+div,
+section {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.botao-verde {
+  font-family: Lora, sans-serif;
+  font-size: 1.1rem;
+  color: var(--verde5);
+  background: var(--verde2);
+  width: 180px;
+  height: 50px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .botao-verde {
+    font-size: 1rem;
+    width: 150px;
+    height: 42px;
+  }
+}
+
+.strong-verde {
+  color: var(--verde3);
+}
+
+#wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
